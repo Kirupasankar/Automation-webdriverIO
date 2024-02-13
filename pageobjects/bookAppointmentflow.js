@@ -90,9 +90,19 @@ class BookAppointmentsFlow {
             console.error("Error occurred while picking a date:", error);
         }
     }
+    async scrolltoElement() {
+        //(await bookAppointmentsLocators.reviewAppointmentButton).scrollIntoView();
+        return (await bookAppointmentsLocators.reviewAppointmentButton).scrollIntoView(false);
+    }
     async clickReviewCTAButton() {
         (await bookAppointmentsLocators.reviewAppointmentButton).waitForClickable({ timeout: 10000 });
         return (await bookAppointmentsLocators.reviewAppointmentButton).click();
+    }
+    async bookappointmentCTAButton() {
+        return (await bookAppointmentsLocators.bookappointmentCTAbutton).click();
+    }
+    async acceptAlert() {
+        return await browser.acceptAlert();
     }
 }
 module.exports = new BookAppointmentsFlow();

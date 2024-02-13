@@ -21,7 +21,7 @@ class signInOrSignUpScreen {
     }
     async verifyLogIn() {
         (await signInOrSignUpLocators.logIn).waitForClickable({ timeout: 5000 });
-        await signInOrSignUpLocators.logIn.click();
+        return await signInOrSignUpLocators.logIn.click();
     }
 }
 module.exports = new signInOrSignUpScreen()

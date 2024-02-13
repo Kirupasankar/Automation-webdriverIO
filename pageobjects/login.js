@@ -18,8 +18,8 @@ class loginpom {
     }
     loginButton = async () => {
         (await loginUserNameLocator.loginBtn).waitForClickable({ timeout: 5000 });
-        (await loginUserNameLocator.loginBtn).click();
-        // await browser.pause(15000);
+        return (await loginUserNameLocator.loginBtn).click();
+        await browser.pause(15000);
     }
 }
 module.exports = new loginpom();

@@ -8,10 +8,10 @@ class CarouselActions {
                     id: 'finger1',
                     parameters: { pointerType: 'touch' },
                     actions: [
-                        { type: 'pointerMove', duration: 0, x: 1050, y: 1034 },
+                        { type: 'pointerMove', duration: 0, x: 1024, y: 993 },
                         { type: 'pointerDown', button: 0 },
                         { type: 'pause', duration: 1000 },
-                        { type: 'pointerMove', duration: 1000, x: 10, y: 1034 },
+                        { type: 'pointerMove', duration: 1000, x: 60, y: 993 },
                         { type: 'pointerUp', button: 0 }
                     ],
                 },

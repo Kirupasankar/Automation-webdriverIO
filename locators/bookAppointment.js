@@ -32,5 +32,8 @@ class BookAppointments {
     get reviewAppointmentButton() {
         return $('~Review Appointment')
     }
+    get bookappointmentCTAbutton() {
+        return $('//android.widget.Button[@content-desc="Book Appointment"]')
+    }
 }
 module.exports = new BookAppointments()
